@@ -9,3 +9,9 @@ variable "acl_policy" {
   type        = string
   default     = "private"
 }
+
+variable "website" {
+  description = "Create S3-website"
+  type        = bool
+  default     = false
+}
