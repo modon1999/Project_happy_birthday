@@ -16,3 +16,8 @@ data "aws_iam_policy_document" "allow_access_from_another_account" {
     ]
   }
 }
+
+resource "aws_s3_bucket_policy" "bucket_policy" {
+  bucket = var.name_bucket
+  policy = data.aws_iam_policy_document.allow_access_from_another_account
+}

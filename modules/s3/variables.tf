@@ -9,9 +9,3 @@ variable "acl_policy" {
   type        = string
   default     = "private"
 }
-
-variable "bucket_policy" {
-  description = "ACL polycy"
-  type        = string
-  default     = ""
-}
